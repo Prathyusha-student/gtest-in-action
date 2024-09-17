@@ -38,11 +38,11 @@ TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
 {
   //Arrange
   string input= "-1";
- int expectedValue = 0;
+ str expectedValue = "Negatives not allowed";
   //ACT
   int actualValue = Add(input);
   //Assert
-  ASSERT_GT(expectedValue,actualValue);
+  ASSERT_GT(actualValue, expectedValue);
   
 }
 TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
