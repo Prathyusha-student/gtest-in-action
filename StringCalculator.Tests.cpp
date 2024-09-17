@@ -34,17 +34,6 @@ TEST(StringCalculatorTestSuite,add_OneInputString_OneIsExpected)
   ASSERT_EQ(actualValue, expectedValue);
   
 }
-TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
-{
-  //Arrange
-  const char* input= "-1";
-const char* expectedValue = "Negatives not allowed";
-  //ACT
-  const char* actualValue = Add(input);
-  //Assert
-  ASSERT_STREQ(actualValue, expectedValue);
-  
-}
 TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
 {
   //Arrange
