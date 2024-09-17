@@ -53,4 +53,4 @@ string expectedValue = -1;
   //ACT
   const char* actualValue = Add(input);
   //Assert
- ASSERT_THROW(
+ ASSERT_THROW(actualValue,invalid_argument);
