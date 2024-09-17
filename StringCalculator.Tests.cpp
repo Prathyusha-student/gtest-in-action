@@ -53,3 +53,12 @@ TEST(StringCalculatorTestSuite,add_NegativeString_InvalidIsExpected)
   //Assert
  ASSERT_THROW(Add(input),invalid_argument);
 }
+TEST(StringCalculatorTestSuite,add_Passedover1000String_AddIsExpected)
+{
+  //Arrange
+  string input= " 1,1000,1001";
+ int expectedValue = 1001;
+  //ACT
+  int actualValue = Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
