@@ -34,7 +34,7 @@ TEST(StringCalculatorTestSuite,add_OneInputString_OneIsExpected)
   ASSERT_EQ(actualValue, expectedValue);
   
 }
-TEST(StringCalculatorTestSuite,add_OneInputString_OneIsExpected)
+TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
 {
   //Arrange
   string input= "-1";
