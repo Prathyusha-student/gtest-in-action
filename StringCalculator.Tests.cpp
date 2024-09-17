@@ -38,7 +38,7 @@ TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
 {
   //Arrange
   string input= "-1";
- str expectedValue = "Negatives not allowed";
+ string expectedValue = "Negatives not allowed";
   //ACT
   int actualValue = Add(input);
   //Assert
