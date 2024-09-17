@@ -42,7 +42,7 @@ TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
   //ACT
   int actualValue = Add(input);
   //Assert
-  ASSERT_GT(actualValue, expectedValue);
+  ASSERT_STREQ(actualValue, expectedValue);
   
 }
 TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
