@@ -49,9 +49,7 @@ TEST(StringCalculatorTestSuite,add_NegativeString_InvalidIsExpected)
 {
   //Arrange
   string input= "-1,2";
-string expectedValue = -1;
-  //ACT
-  const char* actualValue = Add(input);
+  //AC
   //Assert
- ASSERT_THROW(actualValue,invalid_argument);
+ ASSERT_THROW(Add(input),invalid_argument);
 }
