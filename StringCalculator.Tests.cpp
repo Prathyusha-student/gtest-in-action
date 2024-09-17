@@ -34,3 +34,14 @@ TEST(StringCalculatorTestSuite,add_OneInputString_OneIsExpected)
   ASSERT_EQ(actualValue, expectedValue);
   
 }
+TEST(StringCalculatorTestSuite,add_OneInputString_OneIsExpected)
+{
+  //Arrange
+  string input= "-1";
+  int expectedValue = "Negative";
+  //ACT
+  int actualValue = Add(input);
+  //Assert
+  ASSERT_EQ(actualValue, expectedValue);
+  
+}
