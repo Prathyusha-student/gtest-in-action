@@ -9,10 +9,10 @@ public:
 };
 TEST(StringCalculatorDataDrivenTestSuite, DataDrivenTestCase){
 vector<TestDataPair> dataList;
-TestPair pair_one{ "",0};
-TestPair pair_two{ "0",0};
-TestPair pair_three{ "1",1};
-TestPair pair_four{ "1,2,3",6};
+TestDataPair pair_one{ "",0};
+TestDataPair pair_two{ "0",0};
+TestDataPair pair_three{ "1",1};
+TestDataPair pair_four{ "1,2,3",6};
 
 dataList.push_back(pair_one);
 dataList.push_back(pair_two);
