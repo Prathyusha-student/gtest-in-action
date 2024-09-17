@@ -45,3 +45,12 @@ TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
   ASSERT_EQ(actualValue,expectedValue);
   
 }
+TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
+{
+  //Arrange
+  string input= "-1,2";
+string expectedValue = -1;
+  //ACT
+  const char* actualValue = Add(input);
+  //Assert
+ ASSERT_EQ(actualValue,expectedValue);
