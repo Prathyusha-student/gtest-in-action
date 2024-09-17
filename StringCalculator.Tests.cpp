@@ -45,7 +45,7 @@ TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
   ASSERT_EQ(actualValue,expectedValue);
   
 }
-TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
+TEST(StringCalculatorTestSuite,add_NegativeString_InvalidIsExpected)
 {
   //Arrange
   string input= "-1,2";
@@ -54,3 +54,4 @@ string expectedValue = -1;
   const char* actualValue = Add(input);
   //Assert
  ASSERT_THROW(actualValue,invalid_argument);
+}
