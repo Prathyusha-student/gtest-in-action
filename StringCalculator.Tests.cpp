@@ -62,3 +62,14 @@ TEST(StringCalculatorTestSuite,add_Passedover1000String_AddIsExpected)
   int actualValue = Add(input);
   //Assert
   ASSERT_EQ(actualValue,expectedValue);
+}
+TEST(StringCalculatorTestSuite,add_MutliplecommaDelimitersString_AddIsExpected)
+{
+  //Arrange
+  string input= " 1,2,999";
+ int expectedValue = 1002;
+  //ACT
+  int actualValue = Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+}
