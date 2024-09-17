@@ -73,7 +73,7 @@ TEST(StringCalculatorTestSuite,add_MutliplecommaDelimitersString_AddIsExpected)
   //Assert
   ASSERT_EQ(actualValue,expectedValue);
 }
-TEST(StringCalculatorTestSuite,add_MutliplecommaDelimitersString_AddIsExpected)
+TEST(StringCalculatorTestSuite,add_MutlipleDelimitersString_AddIsExpected)
 {
   //Arrange
   string input= " 1\n2,999";
@@ -83,3 +83,24 @@ TEST(StringCalculatorTestSuite,add_MutliplecommaDelimitersString_AddIsExpected)
   //Assert
   ASSERT_EQ(actualValue,expectedValue);
 }
+TEST(StringCalculatorTestSuite,add_MutliplechracterDelimitersString_AddIsExpected)
+{
+  //Arrange
+  string input= " 1\n*****2,***999";
+ int expectedValue = 1002;
+  //ACT
+  int actualValue = Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+}
+TEST(StringCalculatorTestSuite,add_MutlipleMulticharacterDelimitersString_AddIsExpected)
+{
+  //Arrange
+  string input= " 1\n\n2,999";
+ int expectedValue = 1002;
+  //ACT
+  int actualValue = Add(input);
+  //Assert
+  ASSERT_EQ(actualValue,expectedValue);
+}
+
