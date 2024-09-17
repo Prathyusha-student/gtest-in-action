@@ -45,3 +45,14 @@ TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
   ASSERT_GT(expectedValue,actualValue);
   
 }
+TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
+{
+  //Arrange
+  string input= " 1,2";
+ int expectedValue = 3;
+  //ACT
+  int actualValue = Add(input);
+  //Assert
+  ASSERT_GT(expectedValue,actualValue);
+  
+}
