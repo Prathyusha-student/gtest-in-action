@@ -40,7 +40,7 @@ TEST(StringCalculatorTestSuite,add_NegativeString_NegativeIsExpected)
   const char* input= "-1";
 const char* expectedValue = "Negatives not allowed";
   //ACT
-  int actualValue = Add(input);
+  const char* actualValue = Add(input);
   //Assert
   ASSERT_STREQ(actualValue, expectedValue);
   
