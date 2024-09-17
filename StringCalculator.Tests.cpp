@@ -42,6 +42,6 @@ TEST(StringCalculatorTestSuite,add_CommadelimiterString_AddIsExpected)
   //ACT
   int actualValue = Add(input);
   //Assert
-  ASSERT_GT(expectedValue,actualValue);
+  ASSERT_EQ(actualValue,expectedValue);
   
 }
