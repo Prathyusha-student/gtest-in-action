@@ -1,1 +1,2 @@
-void alertInCelcius(float farenheit);
+//void alertInCelcius(float farenheit);
+int alertInCelciusFacade(float farenheit);
