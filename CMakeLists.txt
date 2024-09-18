@@ -18,8 +18,7 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancode
-  StringCalculator.cpp
-  InteractionTests.cpp
+ TestChallenge.Tests.cpp
   
  )
 target_link_libraries(
