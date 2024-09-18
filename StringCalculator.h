@@ -5,4 +5,5 @@
 #include<iostream>
 using namespace std;
 
-void Add(const string &input);
+//void Add(const string &input);
+void  Add(const string &input,void(*displayPtr)(int));
